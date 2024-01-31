@@ -2,14 +2,16 @@
 @@include('blocks/navigation.htm',{"contact":"active"})
 @@include('blocks/page-title.htm', {
 "title": "Drop Us A Note",
-"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quibusdam."
+"description": "We would like to hear from you."
 })
 <!-- contact form start -->
 <section class="contact-form">
   <div class="container">
     <form class="row" id="contact-form">
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
+     <!-- Alex TODO <div class="col-md-6 col-sm-12">
+        <div style="margin: 0 auto; text-align: center" class="block">
+          
+          
           <div class="form-group">
             <input name="user_name" type="text" class="form-control" placeholder="Your Name">
           </div>
@@ -25,14 +27,26 @@
         <div class="block">
           <div class="form-group-2">
             <textarea name="user_message" class="form-control" rows="4" placeholder="Your Message"></textarea>
+          </div>-->
+          
+            <div style="margin: 0 auto; text-align: center" class="block">
+          <a  href="mailto:email@email.de">
+            <button type="button" style="color:rgb(128, 125, 125);" class = "email-button">Send Email</button>
+          </a>
           </div>
-          <button class="btn btn-default" type="submit">Send Message</button>
+          <!--<a href="mailto:youremail@example.com">Email me</a>
+          <button class="btn btn-default"  type="submit">Send Message</button>-->
+
+          
+
+
         </div>
       </div>
+      <!-- Alex TODO
       <div class="error" id="error">Sorry Msg dose not sent</div>
-      <div class="success" id="success">Message Sent</div>
+      <div class="success" id="success">Message Sent</div> -->
     </form>
-    <div class="contact-box row">
+    <!-- Alex TODO<div class="contact-box row">
       <div class="col-md-6 col-sm-12">
         <div class="block">
           <h2>Stop By For A visit</h2>
@@ -76,8 +90,8 @@
               data-marker="images/marker.png"></div>
           </div>
         </div>
-      </div>
-    </div>
+      </div> 
+    </div> -->
   </div>
 </section>
 @@include('blocks/footer.htm')
